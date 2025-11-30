@@ -101,7 +101,11 @@ export class Tokenizer implements ITokenizer {
         throw new Error(`Failed to load tokenizer for model '${model}': ${(error as Error).message}`);
       }
     }
-    return this.encoders.get(model)!;
+    const encoder = this.encoders.get(model);
+    if (!encoder) {
+      throw new Error(`Encoder for model '${model}' not found after creation`);
+    }
+    return encoder;
   }
 
   /**
