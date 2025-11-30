@@ -1,5 +1,5 @@
-# FlyScrape
-
+![image](https://i.imgur.com/nobwcP8.png)
+<hr/>
 <div align="center">
 
 **The Ultimate Node.js Web Scraping & Crawling Engine**
@@ -7,15 +7,13 @@
 [![npm version](https://img.shields.io/npm/v/@flyrank/flyscrape.svg?style=flat-square)](https://www.npmjs.com/package/@flyrank/flyscrape)
 [![License](https://img.shields.io/npm/l/@flyrank/flyscrape.svg?style=flat-square)](LICENSE)
 [![Downloads](https://img.shields.io/npm/dm/@flyrank/flyscrape.svg?style=flat-square)](https://www.npmjs.com/package/@flyrank/flyscrape)
-[![GitHub Stars](https://img.shields.io/github/stars/flyrank/flyscrape?style=social)](https://github.com/flyrank/flyscrape/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/flyrank/flyscrape?style=social)](https://github.com/flyrank-bih/flyscrape/stargazers)
 
 </div>
 
-**FlyScrape** is a production-grade, modular web scraping library designed for the modern web. Built on top of Playwright, it turns the web into clean, LLM-ready data for RAG pipelines, AI agents, and data analysis.
+**FlyScrape** is a Node.js package, based on top of Crawl4AI, that makes it easy to integrate powerful scrapers and crawlers directly into your web applications. Designed for the modern web, it provides modular, production-ready tools to extract clean, structured data, ready for RAG pipelines, AI agents, or advanced analytics.
 
-Whether you're building a data pipeline, an AI agent, or a content aggregator, FlyScrape provides the tools to extract clean, structured data from any website with ease.
-
----
+Whether you’re building a content aggregator, an AI agent, or a complex data pipeline, FlyScrape simplifies web crawling and scraping while giving you maximum flexibility and performance.
 
 <details>
   <summary>🤔 <strong>Why Developers Pick FlyScrape</strong></summary>
@@ -224,20 +222,6 @@ const result = await crawler.arun("https://store.example.com/product/123", {
 
 We welcome contributions! Please see our [Contribution Guidelines](CONTRIBUTING.md) for details on how to get started.
 
-## 📚 Citation
-
-If you use FlyScrape in your research or project, please cite:
-
-```bibtex
-@software{flyscrape,
-  author = {FlyRank},
-  title = {FlyScrape: The Ultimate Node.js Web Scraping & Crawling Engine},
-  year = {2024},
-  publisher = {GitHub},
-  journal = {GitHub Repository},
-  howpublished = {\url{https://github.com/flyrank/flyscrape}}
-}
-```
 
 ## 📄 License
 
